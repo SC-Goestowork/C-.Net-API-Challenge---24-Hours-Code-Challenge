@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Pizza_Place_Sales_API.Models
 {
-    //This is to map the order_details csv schema into a class
+    //This is to map the order_details database schema into a class
     public class OrderDetails
     {
         [Key]

@@ -4,7 +4,7 @@ using Pizza_Place_Sales_API.Models;
 
 namespace Pizza_Place_Sales_API.Data
 {
-    //This is to set up the Pizzas CSV into an API context
+    //This is to set up the Pizzas into an API context
     public class PizzasApiContext : DbContext
     {
         public DbSet<Pizzas> Pizzas { get; set; }

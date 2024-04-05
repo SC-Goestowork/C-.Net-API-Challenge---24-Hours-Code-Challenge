@@ -1,9 +1,10 @@
 ﻿using CsvHelper.Configuration.Attributes;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Pizza_Place_Sales_API.Models
 {
-    //This is to map the pizza_types csv schema into a class
+    //This is to map the pizza_types database schema into a class
     public class PizzaTypes
     {
         [Key]

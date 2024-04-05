@@ -3,7 +3,7 @@ using Pizza_Place_Sales_API.Models;
 
 namespace Pizza_Place_Sales_API.Data
 {
-    //This is to set up the Order CSV into an API context
+    //This is to set up the Order into an API context
     public class OrdersApiContext : DbContext
     {
         //DbSet will be used to store data InMemory

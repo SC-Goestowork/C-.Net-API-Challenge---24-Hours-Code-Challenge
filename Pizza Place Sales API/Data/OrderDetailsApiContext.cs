@@ -6,7 +6,7 @@ using System.Globalization;
 
 namespace Pizza_Place_Sales_API.Data
 {
-    //This is to set up the Order Details CSV into an API context
+    //This is to set up the Order Details into an API context
     public class OrderDetailsApiContext : DbContext
     {
         public DbSet<OrderDetails> OrderDetails { get; set; }

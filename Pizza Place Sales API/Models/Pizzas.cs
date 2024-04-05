@@ -1,10 +1,11 @@
 ﻿using CsvHelper.Configuration.Attributes;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Pizza_Place_Sales_API.Models
 {
-    //This is to map the pizza_types csv schema into a class
+    //This is to map the pizza_types database schema into a class
     public class Pizzas
     {
         [Key]
@@ -13,7 +14,6 @@ namespace Pizza_Place_Sales_API.Models
 
         [Name("pizza_type_id")]
         public string? PizzaTypeID { get; set; }
-
 
         [Name("size")]
         public string? Size { get; set; }
