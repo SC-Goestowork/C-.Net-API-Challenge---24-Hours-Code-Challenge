@@ -5,5 +5,5 @@ The purpose of this github depository is as follows:
 - to store the contents of a simple RESTAPI application 
 
 The purpose of this simple RESTAPI application is as follows:
-- consumes CSV file from the pizza place sales archive
+- consumes database inputs derived from the csv files
 - to have the API return this consumed data as JSON data
