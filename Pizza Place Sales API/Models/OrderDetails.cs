@@ -7,16 +7,16 @@ namespace Pizza_Place_Sales_API.Models
     public class OrderDetails
     {
         [Key]
-        [Name("order_details_id")]
+        [Index(0)]
         public int OrderDetailsID { get; set; }
 
-        [Name("order_id")]
+        [Index(1)]
         public int OrderID { get; set; }
 
-        [Name("pizza_id")]
+        [Index(2)]
         public string? PizzaID { get; set; }
 
-        [Name("quantity")]
+        [Index(3)]
         public int Quantity { get; set; }
     }
 }

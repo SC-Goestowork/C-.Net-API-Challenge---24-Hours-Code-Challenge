@@ -1,7 +1,5 @@
 ﻿using CsvHelper.Configuration.Attributes;
-using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Pizza_Place_Sales_API.Models
 {
@@ -9,16 +7,16 @@ namespace Pizza_Place_Sales_API.Models
     public class Pizzas
     {
         [Key]
-        [Name("pizza_id")]
+        [Index(0)]
         public string? PizzaID { get; set; }
 
-        [Name("pizza_type_id")]
+        [Index(1)]
         public string? PizzaTypeID { get; set; }
 
-        [Name("size")]
+        [Index(2)]
         public string? Size { get; set; }
 
-        [Name("price")]
+        [Index(3)]
         public float Price { get; set; }
     }
 }

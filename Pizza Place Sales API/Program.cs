@@ -10,10 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 //Add DB context for our data
-builder.Services.AddDbContext<OrdersApiContext>(option => option.UseSqlServer("DefaultConnection"));
-builder.Services.AddDbContext<PizzasApiContext>(option => option.UseSqlServer("DefaultConnection"));
-builder.Services.AddDbContext<OrderDetailsApiContext>(option => option.UseSqlServer("DefaultConnection"));
-builder.Services.AddDbContext<PizzaTypesApiContext>(option => option.UseSqlServer("DefaultConnection"));
+builder.Services.AddDbContext<OrdersApiContext>(opt => opt.UseInMemoryDatabase("Orders"));
+builder.Services.AddDbContext<PizzasApiContext>(opt => opt.UseInMemoryDatabase("Pizzas"));
+builder.Services.AddDbContext<OrderDetailsApiContext>(opt => opt.UseInMemoryDatabase("OrderDetailss"));
+builder.Services.AddDbContext<PizzaTypesApiContext>(opt => opt.UseInMemoryDatabase("PizzaTypes"));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

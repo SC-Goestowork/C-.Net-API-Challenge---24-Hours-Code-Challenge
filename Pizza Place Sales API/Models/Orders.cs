@@ -7,13 +7,13 @@ namespace Pizza_Place_Sales_API
     public class Orders
     {
         [Key]
-        [Name("order_id")]
+        [Index(0)]
         public int OrderID { get; set; }
 
-        [Name("date")]
+        [Index(1)]
         public string? Date { get; set; }
 
-        [Name("time")]
+        [Index(2)]
         public string? Time { get; set; }
 
     }
